@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="roy" value="QATester"></parameter>
+  <test  name="TestToRun">
+  
+  
+  <classes>
+  
+  <class name = "testNGTutorial.NewTest">
+  <methods>
+  <include name="b"/>
+  
+  </methods>
+  
+  </class>                                                            <!--package.classname = class-->
+  <class name = "testNGTutorial.testDemo"/>   
+  <class name = "testNGTutorial.personalLoan"/>    
+                                                               <!-- both different class will be run together-->
+  </classes>
+  
+  </test> <!-- Test -->
+  
+  <test name="carLoan">
+  
+  <classes>
+  
+  <class name="testNGTutorial.login">
+  <methods>
+  <exclude name ="mobileLoginCarLoan"/>
+  
+  </methods>
+  
+  
+   </class>
+  
+  </classes>
+  
+  
+  
+  
+  </test>
+  
+  
+  
+</suite> <!-- Suite -->

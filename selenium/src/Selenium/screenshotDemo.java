@@ -25,6 +25,7 @@ public class screenshotDemo {
 		FileUtils.copyFile(src,new File("E:\\TV series\\screenshot.png"));
 		//here in first step we take screenshot and store the file in src.
 		//In 2nd step we copy src to a file name screenshot and store in C drive.
+		
 	}
 
 }
