@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGTutorial.testDemo">
+      <class name="testNGTutorial.personalLoan">
         <methods>
-          <include name="demo"/>
+          <include name="webLogInpersonalLoan"/>
         </methods>
-      </class> <!-- testNGTutorial.testDemo -->
+      </class> <!-- testNGTutorial.personalLoan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

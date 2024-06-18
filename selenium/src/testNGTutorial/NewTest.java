@@ -10,7 +10,7 @@ public class NewTest {
   
   //by using dependsOnMethods={"f"} method f will be executed first and then method b will be executed.
   
-  @Test(dependsOnMethods={"f"})
+  @Test//(dependsOnMethods={"f"})
   public void b() {
 	  
 	  System.out.println("This is Method b");

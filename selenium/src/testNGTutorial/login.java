@@ -3,7 +3,7 @@ package testNGTutorial;
 import org.testng.annotations.Test;
 
 public class login {
-//by using enabled=false this testcase will not be executed.
+//by using enabled=false this testCase will not be executed.
 	@Test(enabled=false)
 	public void webLogInCarLoan() {
 		

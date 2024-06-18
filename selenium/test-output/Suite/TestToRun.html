@@ -55,18 +55,66 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestToRun</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 16 18:50:51 IST 2024</td>
+<td>Started on:</td><td>Tue Jun 18 07:54:00 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (130 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (181 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>smoke </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGTutorial.testDemo.demo()'><b>demo</b><br>Test class: testNGTutorial.testDemo</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;roy&apos; is required by @Test on method demo but has not been marked @Optional or defined
+in E:\MyTestCases\MyTestCases\selenium\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859654796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859654796'><pre>org.testng.TestNGException: 
+Parameter &apos;roy&apos; is required by @Test on method demo but has not been marked @Optional or defined
+in E:\MyTestCases\MyTestCases\selenium\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testNGTutorial.testDemo@3a44431a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,17 +126,32 @@ function toggleAllBoxes() {
 <td title='testNGTutorial.personalLoan.mobileLoginpersonalLoan()'><b>mobileLoginpersonalLoan</b><br>Test class: testNGTutorial.personalLoan</td>
 <td></td>
 <td>0</td>
-<td>testNGTutorial.personalLoan@6e0f5f7f</td></tr>
+<td>testNGTutorial.personalLoan@3c7f66c4</td></tr>
 <tr>
-<td title='testNGTutorial.NewTest.f()'><b>f</b><br>Test class: testNGTutorial.NewTest</td>
+<td title='testNGTutorial.personalLoan.webLogInpersonalLoan()'><b>webLogInpersonalLoan</b><br>Test class: testNGTutorial.personalLoan<br>Parameters: secondsetusername, secondsetpassword</td>
 <td></td>
 <td>0</td>
-<td>testNGTutorial.NewTest@5b03b9fe</td></tr>
+<td>testNGTutorial.personalLoan@3c7f66c4</td></tr>
 <tr>
-<td title='testNGTutorial.login.ApiLoginCarLoan()'><b>ApiLoginCarLoan</b><br>Test class: testNGTutorial.login</td>
+<td title='testNGTutorial.personalLoan.webLogInpersonalLoan()'><b>webLogInpersonalLoan</b><br>Test class: testNGTutorial.personalLoan<br>Parameters: thirdsetusername, thirdsetpassword</td>
 <td></td>
 <td>0</td>
-<td>testNGTutorial.login@18d87d80</td></tr>
+<td>testNGTutorial.personalLoan@3c7f66c4</td></tr>
+<tr>
+<td title='testNGTutorial.personalLoan.webLogInpersonalLoan()'><b>webLogInpersonalLoan</b><br>Test class: testNGTutorial.personalLoan<br>Parameters: firstsetusername, firstsetpassword</td>
+<td></td>
+<td>0</td>
+<td>testNGTutorial.personalLoan@3c7f66c4</td></tr>
+<tr>
+<td title='testNGTutorial.NewTest.b()'><b>b</b><br>Test class: testNGTutorial.NewTest</td>
+<td></td>
+<td>0</td>
+<td>testNGTutorial.NewTest@7bd4937b</td></tr>
+<tr>
+<td title='testNGTutorial.personalLoan.ApiLoginpersonalLoan()'><b>ApiLoginpersonalLoan</b><br>Test class: testNGTutorial.personalLoan</td>
+<td></td>
+<td>0</td>
+<td>testNGTutorial.personalLoan@3c7f66c4</td></tr>
 </table><p>
 </body>
 </html>

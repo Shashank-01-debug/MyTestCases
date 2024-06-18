@@ -2,7 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<parameter name="roy" value="QATester"></parameter>
+<listeners>
+
+<listener class-name="testNGTutorial.listenersDemo"/>
+
+</listeners>
   <test  name="TestToRun">
   
   

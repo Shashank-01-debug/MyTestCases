@@ -12,7 +12,7 @@ public class testDemo {
 	
 	@Parameters({"roy"})
 	@Test
-	public void demo(@Optional("defaultValue")String uname) 
+	public void demo(String uname) 
 	{
 		
 		System.out.println("hey, welcome to testNG tutorial.");

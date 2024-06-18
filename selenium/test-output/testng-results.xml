@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="11" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-16T20:30:33 IST" name="Default suite" finished-at="2024-06-16T20:30:33 IST" duration-ms="126">
+  <suite started-at="2024-06-18T07:54:00 IST" name="Suite" finished-at="2024-06-18T07:54:00 IST" duration-ms="398">
     <groups>
+      <group name="smoke">
+        <method signature="login.ApiLoginCarLoan()[pri:0, instance:testNGTutorial.login@e350b40]" name="ApiLoginCarLoan" class="testNGTutorial.login"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-06-16T20:30:33 IST" name="Default test" finished-at="2024-06-16T20:30:33 IST" duration-ms="126">
+    <test started-at="2024-06-18T07:54:00 IST" name="TestToRun" finished-at="2024-06-18T07:54:00 IST" duration-ms="181">
       <class name="testNGTutorial.testDemo">
-        <test-method signature="demo(java.lang.String)[pri:0, instance:testNGTutorial.testDemo@2b91004a]" started-at="2024-06-16T20:30:33 IST" name="demo" finished-at="2024-06-16T20:30:33 IST" duration-ms="16" status="PASS">
+        <test-method signature="demo(java.lang.String)[pri:0, instance:testNGTutorial.testDemo@3a44431a]" started-at="2024-06-18T07:54:00 IST" name="demo" finished-at="2024-06-18T07:54:00 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'roy' is required by @Test on method demo but has not been marked @Optional or defined
+in E:\MyTestCases\MyTestCases\selenium\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'roy' is required by @Test on method demo but has not been marked @Optional or defined
+in E:\MyTestCases\MyTestCases\selenium\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+      </class> <!-- testNGTutorial.testDemo -->
+      <class name="testNGTutorial.NewTest">
+        <test-method signature="b()[pri:0, instance:testNGTutorial.NewTest@7bd4937b]" started-at="2024-06-18T07:54:00 IST" name="b" finished-at="2024-06-18T07:54:00 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+      </class> <!-- testNGTutorial.NewTest -->
+      <class name="testNGTutorial.personalLoan">
+        <test-method signature="ApiLoginpersonalLoan()[pri:0, instance:testNGTutorial.personalLoan@3c7f66c4]" started-at="2024-06-18T07:54:00 IST" name="ApiLoginpersonalLoan" finished-at="2024-06-18T07:54:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiLoginpersonalLoan -->
+        <test-method signature="mobileLoginpersonalLoan()[pri:0, instance:testNGTutorial.personalLoan@3c7f66c4]" started-at="2024-06-18T07:54:00 IST" name="mobileLoginpersonalLoan" finished-at="2024-06-18T07:54:00 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileLoginpersonalLoan -->
+        <test-method signature="webLogInpersonalLoan(java.lang.String,java.lang.String)[pri:0, instance:testNGTutorial.personalLoan@3c7f66c4]" started-at="2024-06-18T07:54:00 IST" name="webLogInpersonalLoan" data-provider="getData" finished-at="2024-06-18T07:54:00 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[defaultValue]]>
+                <![CDATA[firstsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstsetpassword]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- testNGTutorial.testDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- webLogInpersonalLoan -->
+        <test-method signature="webLogInpersonalLoan(java.lang.String,java.lang.String)[pri:0, instance:testNGTutorial.personalLoan@3c7f66c4]" started-at="2024-06-18T07:54:00 IST" name="webLogInpersonalLoan" data-provider="getData" finished-at="2024-06-18T07:54:00 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondsetpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLogInpersonalLoan -->
+        <test-method signature="webLogInpersonalLoan(java.lang.String,java.lang.String)[pri:0, instance:testNGTutorial.personalLoan@3c7f66c4]" started-at="2024-06-18T07:54:00 IST" name="webLogInpersonalLoan" data-provider="getData" finished-at="2024-06-18T07:54:00 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdsetpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLogInpersonalLoan -->
+      </class> <!-- testNGTutorial.personalLoan -->
+    </test> <!-- TestToRun -->
+    <test started-at="2024-06-18T07:54:00 IST" name="carLoan" finished-at="2024-06-18T07:54:00 IST" duration-ms="8">
+      <class name="testNGTutorial.login">
+        <test-method signature="ApiLoginCarLoan()[pri:0, instance:testNGTutorial.login@e350b40]" started-at="2024-06-18T07:54:00 IST" name="ApiLoginCarLoan" finished-at="2024-06-18T07:54:00 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiLoginCarLoan -->
+      </class> <!-- testNGTutorial.login -->
+    </test> <!-- carLoan -->
+  </suite> <!-- Suite -->
 </testng-results>
